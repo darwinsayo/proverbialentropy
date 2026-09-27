@@ -1,240 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proverbial Entropy — Notes on societal decay and the preservation of the soul</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Cormorant Garamond for editorial serif headers, Plus Jakarta Sans for refined body -->
+    <title>Proverbial Entropy</title>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                    },
-                    colors: {
-                        midnight: '#121417',
-                        charcoal: '#1a1d22',
-                        surface: '#22262d',
-                        parchment: '#f3f0ea',
-                        muted: '#9ca3af',
-                        accent: '#d4af37', // subtle antique gold/brass
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* Custom scrollbar and subtle selection styling */
-        body {
-            background-color: #121417;
-            color: #f3f0ea;
-            font-family: 'Plus Jakarta Sans', sans-serif;
-            overflow-x: hidden;
-        }
-        ::selection {
-            background-color: #d4af37;
-            color: #121417;
-        }
-        .editorial-border {
-            border-color: rgba(212, 175, 55, 0.2);
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body class="min-h-screen flex flex-col justify-between selection:bg-accent selection:text-midnight">
-
-    <header class="w-full border-b editorial-border py-6 px-6 md:px-16 flex justify-between items-center backdrop-blur-md bg-midnight/80 sticky top-0 z-50">
-        <a href="#" class="font-serif text-xl md:text-2xl tracking-widest text-parchment hover:text-accent transition-colors duration-300">
-            PROVERBIAL ENTROPY
-        </a>
-        <nav class="hidden md:flex items-center space-x-8 text-sm tracking-widest uppercase text-muted">
-            <a href="#manifesto" class="hover:text-parchment transition-colors">Manifesto</a>
-            <a href="#dispatches" class="hover:text-parchment transition-colors">Dispatches</a>
-            <a href="#subscribe" class="hover:text-parchment transition-colors">Receive Letters</a>
-        </nav>
-        <div class="text-xs uppercase tracking-widest text-accent font-medium border border-accent/30 px-3 py-1 rounded-full">
-            Anonymous
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="site-logo">Proverbial Entropy</h1>
+            <p class="site-tagline">Internal musings on modern chaos and the preservation of the soul.</p>
         </div>
     </header>
 
-    <main class="flex-grow">
-        <section class="max-w-4xl mx-auto px-6 pt-24 pb-20 text-center">
-            <div class="inline-block mb-6 text-accent text-sm tracking-[0.3em] uppercase opacity-90">
-                &mdash; dispatches from the quiet edge &mdash;
-            </div>
-            <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-normal tracking-tight text-parchment mb-8 leading-[1.15]">
-                Everything unravels.<br><span class="italic font-light text-muted">Except what we anchor.</span>
-            </h1>
-            <p class="font-light text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-12 leading-relaxed">
-                Internal musings on societal decay, digital static, and the quiet, persistent preservation of the human soul through a contemplative Catholic lens.
-            </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-                <a href="#dispatches" class="w-full sm:w-auto px-8 py-4 bg-parchment text-midnight font-medium rounded-none hover:bg-accent hover:text-midnight transition-all duration-300 tracking-wider text-sm uppercase">
-                    Read Recent Dispatches
-                </a>
-                <a href="#subscribe" class="w-full sm:w-auto px-8 py-4 border editorial-border text-parchment hover:bg-surface transition-all duration-300 tracking-wider text-sm uppercase">
-                    Quiet Subscriptions
-                </a>
-            </div>
+    <main class="main-content container">
+        <section class="intro-section">
+            <p>Everything naturally drifts, fragments, and falls apart unless met with deliberate, quiet resistance. This space is a collection of thoughts on societal decay, digital static, and what remains steady within.</p>
         </section>
 
-        <section id="manifesto" class="py-24 px-6 bg-charcoal/50 border-y editorial-border">
-            <div class="max-w-3xl mx-auto">
-                <div class="text-xs tracking-[0.25em] uppercase text-accent mb-4 text-center">The Premise</div>
-                <h2 class="font-serif text-3xl md:text-4xl text-center text-parchment mb-12 tracking-wide">
-                    The Architecture of Quiet Resistance
-                </h2>
-                <div class="space-y-6 font-light text-muted leading-relaxed text-base sm:text-lg">
-                    <p>
-                        We live in a world rushing effortlessly toward disorder. Left unattended, every structure—political, cultural, familial, and interior—breaks down into noise, distraction, and fragmentation. This is the law of proverbial entropy.
-                    </p>
-                    <p>
-                        To look around today is to witness a civilization unraveling at the seams, trading depth for velocity and sacred mystery for commodified metrics. But the true tragedy of societal decay is not just external; it is how easily the noise leaks inward, eroding the quiet chambers of the soul.
-                    </p>
-                    <p class="text-parchment italic font-normal border-l-2 border-accent pl-6 my-8">
-                        "Holiness is not the absence of chaos in the world, but the stubborn, daily cultivation of an ordered sanctuary within."
-                    </p>
-                    <p>
-                        This space exists as an anonymous refuge for slow thought. Here, we observe the breakdown without succumbing to despair, seeking instead the eternal anchor of grace, tradition, and interior silence.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="dispatches" class="py-24 px-6 max-w-6xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-baseline mb-16 border-b editorial-border pb-6">
-                <div>
-                    <span class="text-xs tracking-[0.25em] uppercase text-accent">Archive</span>
-                    <h2 class="font-serif text-3xl md:text-4xl text-parchment mt-2">Recent Dispatches</h2>
-                </div>
-                <p class="text-muted text-sm mt-2 md:mt-0 font-light">Reflections published quietly, as thoughts crystallize.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <article class="bg-charcoal border editorial-border p-8 flex flex-col justify-between hover:border-accent/60 transition-all duration-300 group">
-                    <div>
-                        <div class="flex justify-between items-center text-xs text-muted mb-4 tracking-widest uppercase">
-                            <span>Dispatch No. 12</span>
-                            <span>6 min read</span>
-                        </div>
-                        <h3 class="font-serif text-2xl text-parchment mb-4 group-hover:text-accent transition-colors leading-snug">
-                            On Silence in a Loud Century
-                        </h3>
-                        <p class="text-muted font-light text-sm leading-relaxed mb-6">
-                            How the systematic elimination of quiet spaces starves the contemplative faculty, and why guarding one's internal silence has become an act of spiritual warfare.
-                        </p>
-                    </div>
-                    <div class="pt-6 border-t border-surface flex items-center justify-between text-xs tracking-wider text-accent uppercase">
-                        <span>Read Essay</span>
-                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
-                    </div>
-                </article>
-
-                <!-- Card 2 -->
-                <article class="bg-charcoal border editorial-border p-8 flex flex-col justify-between hover:border-accent/60 transition-all duration-300 group">
-                    <div>
-                        <div class="flex justify-between items-center text-xs text-muted mb-4 tracking-widest uppercase">
-                            <span>Dispatch No. 11</span>
-                            <span>8 min read</span>
-                        </div>
-                        <h3 class="font-serif text-2xl text-parchment mb-4 group-hover:text-accent transition-colors leading-snug">
-                            The Architecture of Loneliness
-                        </h3>
-                        <p class="text-muted font-light text-sm leading-relaxed mb-6">
-                            Examining the paradox of hyper-connectivity. When every human being is accessible at a touch, why does the modern soul feel increasingly orphaned in the dark?
-                        </p>
-                    </div>
-                    <div class="pt-6 border-t border-surface flex items-center justify-between text-xs tracking-wider text-accent uppercase">
-                        <span>Read Essay</span>
-                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
-                    </div>
-                </article>
-
-                <!-- Card 3 -->
-                <article class="bg-charcoal border editorial-border p-8 flex flex-col justify-between hover:border-accent/60 transition-all duration-300 group">
-                    <div>
-                        <div class="flex justify-between items-center text-xs text-muted mb-4 tracking-widest uppercase">
-                            <span>Dispatch No. 10</span>
-                            <span>5 min read</span>
-                        </div>
-                        <h3 class="font-serif text-2xl text-parchment mb-4 group-hover:text-accent transition-colors leading-snug">
-                            Holding the Line Within
-                        </h3>
-                        <p class="text-muted font-light text-sm leading-relaxed mb-6">
-                            When institutional pillars shake and cultural norms dissolve, where must the Catholic gaze fix itself? Reflections on domestic order and spiritual forttitude.
-                        </p>
-                    </div>
-                    <div class="pt-6 border-t border-surface flex items-center justify-between text-xs tracking-wider text-accent uppercase">
-                        <span>Read Essay</span>
-                        <span class="group-hover:translate-x-1 transition-transform">&rarr;</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="subscribe" class="py-24 px-6 bg-charcoal/30 border-t editorial-border">
-            <div class="max-w-xl mx-auto text-center">
-                <div class="text-xs tracking-[0.25em] uppercase text-accent mb-3">Quiet Dispatches</div>
-                <h2 class="font-serif text-3xl md:text-4xl text-parchment mb-4">Receive Letters in Your Inbox</h2>
-                <p class="text-muted font-light text-sm sm:text-base mb-8">
-                    No algorithmic feeds, no intrusive promotions. Just occasional, contemplative essays delivered straight to your inbox when a new piece is finished.
-                </p>
-
-                <form id="subscribe-form" class="flex flex-col sm:flex-row gap-3 justify-center items-center" onsubmit="handleSubscribe(event)">
-                    <input 
-                        type="email" 
-                        id="email-input"
-                        placeholder="Enter your email address..." 
-                        required
-                        class="w-full sm:w-80 px-4 py-3.5 bg-midnight border editorial-border text-parchment placeholder-muted/50 text-sm focus:outline-none focus:border-accent transition-colors"
-                    >
-                    <button 
-                        type="submit" 
-                        class="w-full sm:w-auto px-6 py-3.5 bg-parchment text-midnight hover:bg-accent hover:text-midnight font-medium text-sm tracking-wider uppercase transition-all duration-300"
-                    >
-                        Subscribe
-                    </button>
-                </form>
-                <div id="success-message" class="hidden mt-4 text-accent text-sm tracking-wide font-light animate-fade-in">
-                    &dagger; Thank you. You have been added to the quiet dispatch list.
-                </div>
+        <section class="dispatches-section">
+            <h2>Dispatches</h2>
+            <!-- Dynamic dispatches will load here -->
+            <div id="dispatches-container" class="dispatches-grid">
+                <p class="loading-text">Loading dispatches...</p>
             </div>
         </section>
     </main>
 
-    <footer class="border-t editorial-border py-12 px-6 md:px-16 text-center md:flex md:justify-between md:items-center text-xs text-muted tracking-widest uppercase">
-        <div class="mb-4 md:mb-0 font-serif text-sm tracking-wider text-parchment">
-            proverbialentropy.com
-        </div>
-        <div class="mb-4 md:mb-0 font-light">
-            Written anonymously. Preserved by grace. &copy; 2026.
-        </div>
-        <div class="text-accent text-lg">
-            &#10013;
-        </div>
+    <footer class="site-footer container">
+        <p>&copy; 2026 Proverbial Entropy. All rights reserved.</p>
     </footer>
 
-    <script>
-        function handleSubscribe(event) {
-            event.preventDefault();
-            const emailInput = document.getElementById('email-input');
-            const successMessage = document.getElementById('success-message');
-            const form = document.getElementById('subscribe-form');
-
-            if (emailInput.value.trim() !== '') {
-                form.style.opacity = '0.4';
-                form.style.pointerEvents = 'none';
-                successMessage.classList.remove('hidden');
-                emailInput.value = '';
-            }
-        }
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>
