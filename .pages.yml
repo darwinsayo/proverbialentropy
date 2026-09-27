@@ -1,0 +1,19 @@
+media: media
+content:
+  - name: dispatches
+    label: Dispatches
+    type: collection
+    path: content/dispatches
+    fields:
+      - name: title
+        type: string
+        required: true
+      - name: date
+        type: date
+        required: true
+      - name: tag
+        type: string
+      - name: description
+        type: text
+      - name: body
+        type: rich-text
